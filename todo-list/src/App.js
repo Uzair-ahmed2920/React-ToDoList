@@ -2,7 +2,11 @@
 
 function App() {
   return (
-    <div>Hello</div>
+    <div className="mainDiv">Hello
+    <div className="centerDiv">
+      from center 
+    </div>
+    </div>
   );
 }
 
