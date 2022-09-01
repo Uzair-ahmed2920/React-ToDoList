@@ -15,13 +15,13 @@ function App() {
     });
     setInputList("");
   };
-  const deleteItem = (id)=> {
+  const deleteItem = (id) => {
     setItem((olditems) => {
-      return olditems.filter((arrElement, index)=>{
-        return index !== id ;
-      })
-    })
-  }
+      return olditems.filter((arrElement, index) => {
+        return index !== id;
+      });
+    });
+  };
   return (
     <div className="mainDiv">
       <div className="centerDiv">
@@ -44,7 +44,14 @@ function App() {
         </div>
         <ol>
           {item.map((itemval, index) => {
-            return <TodoList text={itemval} key={index} id={index} selected={deleteItem} />;
+            return (
+              <TodoList
+                text={itemval}
+                key={index}
+                id={index}
+                selected={deleteItem}
+              />
+            );
           })}
         </ol>
       </div>
