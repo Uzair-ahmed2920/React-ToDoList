@@ -13,7 +13,7 @@
     height: 100vh;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: center; 
     align-items: center;
     text-align: center;
     
@@ -21,7 +21,7 @@
 .centerDiv{
     background:rgb(255, 255, 255);
     width: 25%;
-    height: 80vh;
+    height: 60vh;
     border-radius: 15px;
     box-shadow: 5px 5px 25px -5px rgba(0, 0, 0,0.5);
 }
@@ -36,6 +36,7 @@ h1 {
 input{
     text-align: center;
     height: 30px;
+    margin-top: 25px;
     margin-left: 10px;
     top: 10px;
     border: none;
@@ -46,3 +47,57 @@ input{
     border-bottom: 5px solid rgb(9, 61, 38);
     outline: none;
 }
+.inputbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.inputbar .changeColor {
+    color: rgb(9, 61, 38);
+  }
+  
+.inputbar .changeColor:hover {
+    color: rgb(209, 79, 79);
+  }
+  ol {
+    margin-top: 35px;
+  }
+  ol li {
+    padding-left: 0px;
+    margin-left: 10px;
+    text-align: left;
+    font-size: 20px;
+    font-weight: 500;
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+    color: rgb(41, 137, 49);
+    text-transform: capitalize; 
+  }
+  .todo-style {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+  }
+  .delet-button {
+    color: rgb(41, 137, 49);
+    margin-top: 3px;
+    margin-left: 20px;
+  }
+  .delet-button:hover {
+    color: rgb(196, 30, 30);
+  }
+
+  @media(max-width: 800px){
+  .centerDiv {
+    width: 55%;
+  }
+  .delet-button {
+    margin-left: 15px;
+  }
+  .todo-style {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+  }
+  }
