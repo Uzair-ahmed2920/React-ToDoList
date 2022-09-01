@@ -8,8 +8,10 @@
     font-family: 'Balsamiq Sans','Roboto', sans-serif ,cursive ;
 }
 .mainDiv{
-    background: rgb(56, 102, 84);
-    width: 100%;
+  background: rgb(247,154,6);
+
+  background: linear-gradient(90deg, rgba(247,154,6,1) 0%, rgba(249,189,73,0.7441351540616247) 30%, rgba(159,108,22,0.4500175070028011) 66%);
+  width: 100%;
     height: 100vh;
     display: flex;
     flex-direction: row;
@@ -21,14 +23,14 @@
 .centerDiv{
     background:rgb(255, 255, 255);
     width: 25%;
-    height: 60vh;
+    height:70vh;
     border-radius: 15px;
     box-shadow: 5px 5px 25px -5px rgba(0, 0, 0,0.5);
 }
 h1 {
     color: white;
     background: transparent;
-    background-color: rgb(9, 61, 38);
+    background-color: rgb(75, 22, 15);
     padding: 6px 0 2px 0;
     margin-bottom: 10px;
     box-shadow: 5px 5px 15px -5px rgba(0, 0, 0.3);
@@ -44,7 +46,7 @@ input{
     font-size: 20px;
     font-weight: 500;
     width: 60%;
-    border-bottom: 5px solid rgb(9, 61, 38);
+    border-bottom: 5px solid rgb(75, 20, 20);
     outline: none;
 }
 .inputbar {
@@ -53,7 +55,7 @@ input{
   justify-content: center;
 }
 .inputbar .changeColor {
-    color: rgb(9, 61, 38);
+    color: rgb(75, 20, 20);
   }
   
 .inputbar .changeColor:hover {
@@ -71,7 +73,7 @@ input{
     min-height: 40px;
     display: flex;
     align-items: center;
-    color: rgb(41, 137, 49);
+    color: rgb(102, 24, 23);
     text-transform: capitalize; 
   }
   .todo-style {
@@ -80,17 +82,18 @@ input{
     justify-content: left;
   }
   .delet-button {
-    color: rgb(41, 137, 49);
+    color: rgb(102, 24, 23);;
     margin-top: 3px;
     margin-left: 20px;
   }
   .delet-button:hover {
-    color: rgb(196, 30, 30);
+    color: rgb(231, 19, 19);
   }
 
-  @media(max-width: 800px){
+  @media(max-width: 748px){
   .centerDiv {
-    width: 55%;
+    width: 70%;
+    
   }
   .delet-button {
     margin-left: 15px;

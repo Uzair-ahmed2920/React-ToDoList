@@ -1,22 +1,29 @@
+import { useEffect } from "react";
 import { useState } from "react";
 import { MdAddCircle } from "react-icons/md";
 import { TodoList } from "./components/TodoList";
 
+const itemFromLocalStorage = JSON.parse(localStorage.getItem('item') || "[]")
+
 function App() {
   const [inputList, setInputList] = useState();
-  const [item, setItem] = useState([]);
+  const [item, setItems] = useState(itemFromLocalStorage);
+
+  useEffect(() =>{
+    localStorage.setItem("item",JSON.stringify(item));
+  }, [item]);
 
   const itemEvent = (event) => {
     setInputList(event.target.value);
   };
   const itemList = () => {
-    setItem((olditems) => {
+    setItems((olditems) => {
       return [...olditems, inputList];
     });
     setInputList("");
   };
   const deleteItem = (id) => {
-    setItem((olditems) => {
+    setItems((olditems) => {
       return olditems.filter((arrElement, index) => {
         return index !== id;
       });
